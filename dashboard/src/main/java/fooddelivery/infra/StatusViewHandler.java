@@ -102,7 +102,7 @@ public class StatusViewHandler {
                 List<Status> statusList = statusRepository.findByOrderId(coookFinished.getOrderId());
                 for(Status status : statusList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    status.setStoreStatus("Cook Finished);
+                    status.setStoreStatus("Cook Finished");
                 // view 레파지 토리에 save
                 statusRepository.save(status);
                 }
